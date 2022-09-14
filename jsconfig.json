@@ -1,7 +1,10 @@
 {
+  "vueCompilerOptions": { 
+    "experimentalDisableTemplateSupport": true 
+  },
   "compilerOptions": {
-    "target": "es5",
-    "module": "esnext",
+    "target": "es6",
+    "module": "commonjs",
     "baseUrl": "./",
     "moduleResolution": "node",
     "paths": {
@@ -14,6 +17,7 @@
       "dom",
       "dom.iterable",
       "scripthost"
-    ]
+    ],
+    "jsx": "preserve"
   }
 }
