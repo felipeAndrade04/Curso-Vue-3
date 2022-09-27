@@ -1,6 +1,7 @@
 import router from '../router'
 import axios from 'axios'
 import AuthService from './auth'
+import UsersService from './users'
 
 const API_ENVS = {
   production: 'https://backend-treinamento-vue3.vercel.app',
@@ -37,5 +38,6 @@ httpClient.interceptors.response.use((response) => response, (error) => {
 })
 
 export default {
-  auth: AuthService(httpClient)
+  auth: AuthService(httpClient),
+  users: UsersService(httpClient)
 }
